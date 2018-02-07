@@ -1,0 +1,14 @@
+<ns0:bpl-document xmlns:ns0="http://www.bradycorp.com/printers/bpl">
+<ns0:defaults>
+	<ns0:document units="inches" />
+</ns0:defaults>
+<ns0:labels>
+	<ns0:label height="3.0" width="2.0">
+		<ns0:barcode height="1.0" human-readable="true" human-readable-location="bottom" position-x="0.1" position-y="0.2" type="code 39">
+			<ns0:datasource>
+				<ns0:static-text value="This is a test" />
+			</ns0:datasource>
+		</ns0:barcode>
+	</ns0:label>
+</ns0:labels>
+</ns0:bpl-document>
