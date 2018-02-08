@@ -9,7 +9,6 @@ parser.add_argument("--unit_tag")
 args = parser.parse_args()
 unit_tag = args.unit_tag
 
-
 ET.register_namespace('', 'http://www.bradycorp.com/printers/bpl')
 
 def get_xml(filename, unit_tag, unit_type):
@@ -20,7 +19,6 @@ def get_xml(filename, unit_tag, unit_type):
     text_node.set('value', node_value)
     print(text_node.attrib)
     tree.write('output.xml')
-
 
 def getConfigFromFile(file):
     db_config_json = open(file)
