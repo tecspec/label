@@ -1,0 +1,33 @@
+<html>
+    <head>
+	<style>
+	.image-wrapper {
+	    text-align: center;
+	}
+	.image-pipe {
+	    -webkit-transform: rotate(-90deg);
+	    -moz-transform: rotate(-90deg);
+	    -o-transform: rotate(-90deg);
+	    -ms-transform: rotate(-90deg);
+	    transform: rotate(-90deg);
+	}
+	</style>
+    </head>
+    <body>
+	<div ng-app="PipeApp" ng-cloak ng-controller="MainController as vm">
+		<div>
+			<label>Enter Unit Tag: 
+				<input ng-model="vm.model.inputTag" ng-change="vm.setUnitData()" />
+				<button ng-show="vm.model.unitData">Send</button>
+			</label>
+		</div>
+		<div class="image-wrapper" ng-show="vm.model.unitData">
+			<h2>Does your image look like this? If so, hit SUBMIT</h2>
+			<img  class="image-pipe" ng-src="{{vm.getUrlSrc()}}"/>
+		</div>
+	</div>
+	<script src="angular.js" type="text/javascript"></script>
+	<script src="lodash.js" type="text/javascript"></script>
+	<script src="app.js"></script>
+    </body>
+</html>
