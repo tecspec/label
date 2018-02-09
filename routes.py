@@ -116,5 +116,5 @@ def save_unit_tag_list():
     set_unit_tag_timestamp(serial_number, unit_tag)
     filename = create_xml_file(data)
     shell_command_to_print = "cat {} | nc 192.168.2.156 9100".format(filename)
-    #call([shell_command_to_print], shell=True)
+    call([shell_command_to_print], shell=True)
     return "THIS WORKED"

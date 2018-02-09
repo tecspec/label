@@ -10,6 +10,7 @@ function MainController($http){
 	vm.setUnitData = setUnitData;
 	vm.getUrlSrc = getUrlSrc;
 	vm.saveOrder = saveOrder;
+	vm.isUnitDataFound = isUnitDataFound;
 
 		activate();
 
@@ -18,6 +19,10 @@ function MainController($http){
 		function activate(){
 				$http.get("/get-unit-tag-list")
 				.then(getUnitTagList);
+		}
+
+		function isUnitDataFound(){
+			return vm.model.inputTag.length > 0 && !vm.model.unitData;
 		}
 
 		function getUnitTagList(e){
@@ -51,7 +56,22 @@ function MainController($http){
 					data: JSON.stringify(vm.model.unitData),
 					method: 'POST',
 					headers: { 'Content-Type': 'application/json' },
-			});
+			})
+			.then(successFn)
+			.catch(failureFn)
+
+			function successFn(e){
+				console.log(e)
+				alert("Success!");
+				vm.model.inputTag = ""
+				vm.model.unitData = null
+			}
+			function failureFn(e){
+				console.log(e)
+				alert("Success!");
+				vm.model.inputTag = ""
+				vm.model.unitData = null
+			}
 		}
 
 		}
