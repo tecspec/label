@@ -27,7 +27,7 @@ def create_xml_file(data):
     air = labels[10][1][0]
     passthrough = labels[12][1][0]
     address = labels[14][1][0]
-    serial_number = labels[15][0]
+    serial_number = labels[15][0][0]
     unit_tag.set('value', data['unit_tag'])
     bay_risers.set('value', data['bay'])
     return_pipe.set('value', return_piping_string)
