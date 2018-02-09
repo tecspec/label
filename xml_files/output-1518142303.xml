@@ -1,0 +1,164 @@
+<bpl-document xmlns="http://www.bradycorp.com/printers/bpl">
+<defaults>
+	<document units="inches" />
+</defaults>
+<labels>
+
+	<label height="3.0" width="2.0">
+
+	<graphic file-name="tecspeclogo.jpg" height="1" position-x="0" position-y="0" width="3.54">
+	</graphic>
+	<text BOLD="true" align="right" font-name="Arial" position-x="0" position-y="1">
+		<text-sizing>
+			<manual font-size="12" height=".25" width="1.4" />
+		</text-sizing>
+		<datasource>
+			<static-text value="TAG:" />
+		</datasource>
+	</text>
+	<text BOLD="true" align="left" font-name="Arial" position-x="1.45" position-y="1">
+		<text-sizing>
+			<manual font-size="30" height=".25" width="2" />
+		</text-sizing>
+		<datasource>
+			<static-text value="14-W-13B" />
+		</datasource>
+	</text>
+	<text BOLD="true" align="right" font-name="Arial" position-x="0" position-y="1.4">
+		<text-sizing>
+			<manual font-size="12" height=".25" width="1.4" />
+		</text-sizing>
+		<datasource>
+			<static-text value="BAY/RISERS:" />
+		</datasource>
+	</text>
+	<text BOLD="true" align="left" font-name="Arial" position-x="1.45" position-y="1.4">
+		<text-sizing>
+			<manual font-size="30" height=".25" width="2" />
+		</text-sizing>
+		<datasource>
+			<static-text value="BAY 5A-5" />
+		</datasource>
+	</text>
+	<text BOLD="true" align="right" font-name="Arial" position-x="0" position-y="1.5">
+		<text-sizing>
+			<manual font-size="12" height=".25" width="1.4" />
+		</text-sizing>
+		<datasource>
+			<static-text value="RETURN PIPE:" />
+		</datasource>
+	</text>
+	<text BOLD="true" align="left" font-name="Arial" position-x="1.45" position-y="1.8">
+		<text-sizing>
+			<manual font-size="30" height=".25" width="2" />
+		</text-sizing>
+		<datasource>
+			<static-text value="4" />
+		</datasource>
+	</text>
+	<text BOLD="true" align="right" font-name="Arial" position-x="0" position-y="1.9">
+		<text-sizing>
+			<manual font-size="12" height=".25" width="1.4" />
+		</text-sizing>
+		<datasource>
+			<static-text value="SUPPLY PIPE:" />
+		</datasource>
+	</text>
+	<text BOLD="true" align="left" font-name="Arial" position-x="1.45" position-y="2.2">
+		<text-sizing>
+			<manual font-size="30" height=".25" width="2" />
+		</text-sizing>
+		<datasource>
+			<static-text value="4" />
+		</datasource>
+	</text>
+	<text BOLD="true" align="right" font-name="Arial" position-x="0" position-y="2.6">
+		<text-sizing>
+			<manual font-size="12" height=".25" width="1.4" />
+		</text-sizing>
+		<datasource>
+			<static-text value="AIR:" />
+		</datasource>
+	</text>
+	<text BOLD="true" align="left" font-name="Arial" position-x="1.45" position-y="2.6">
+		<text-sizing>
+			<manual font-size="30" height=".25" width="2" />
+		</text-sizing>
+		<datasource>
+			<static-text value="RIGHT" />
+		</datasource>
+	</text>
+	<text BOLD="true" align="right" font-name="Arial" position-x="0" position-y="3.0">
+		<text-sizing>
+			<manual font-size="12" height=".25" width="1.4" />
+		</text-sizing>
+		<datasource>
+			<static-text value="PASSTHROUGH:" />
+		</datasource>
+	</text>
+	<text BOLD="true" align="left" font-name="Arial" position-x="1.45" position-y="3.0">
+		<text-sizing>
+			<manual font-size="30" height=".25" width="2" />
+		</text-sizing>
+		<datasource>
+			<static-text value="" />
+		</datasource>
+	</text>
+	<text BOLD="true" align="right" font-name="Arial" position-x="0" position-y="3.4">
+		<text-sizing>
+			<manual font-size="12" height=".25" width="1.4" />
+		</text-sizing>
+		<datasource>
+			<static-text value="ADDRESS:" />
+		</datasource>
+	</text>
+	<text BOLD="true" align="left" font-name="Arial" position-x="1.45" position-y="3.4">
+		<text-sizing>
+			<manual font-size="30" height=".25" width="2" />
+		</text-sizing>
+		<datasource>
+			<static-text value="13" />
+		</datasource>
+	</text>
+	<barcode density="90" height=".3" human-readable="false" human-readable-location="bottom" position-x="1.8" position-y="3.6" ratio="3:1" type="code 128 a">
+	<datasource value="1518142303">
+		<static-text value="1518057962" />
+	</datasource>
+	</barcode>
+	<rectangle fill="solid" height="0.1" line-thickness="1" position-x="3.0" position-y="2.7" width="0.3">
+	</rectangle>
+	<rectangle fill="none" height="0.1" line-thickness="1" position-x="3.3" position-y="2.7" width="0.3">
+	</rectangle>
+	<rectangle fill="none" height="0.1" line-thickness="1" position-x="3.0" position-y="2.8" width="0.3">
+	</rectangle>
+	<rectangle fill="solid" height="0.1" line-thickness="1" position-x="3.3" position-y="2.8" width="0.3">
+	</rectangle>
+	<rectangle fill="solid" height="0.1" line-thickness="1" position-x="3.0" position-y="2.9" width="0.3">
+	</rectangle>
+	<rectangle fill="none" height="0.1" line-thickness="1" position-x="3.3" position-y="2.9" width="0.3">
+	</rectangle>	
+	<rectangle fill="none" height="0.1" line-thickness="1" position-x="3.0" position-y="3.0" width="0.3">
+	</rectangle>
+	<rectangle fill="solid" height="0.1" line-thickness="1" position-x="3.3" position-y="3.0" width="0.3">
+	</rectangle>
+	<rectangle fill="none" height="0.1" line-thickness="1" position-x="3.0" position-y="3.1" width="0.3">
+	</rectangle>
+	<rectangle fill="solid" height="0.1" line-thickness="1" position-x="3.3" position-y="3.1" width="0.3">
+	</rectangle>
+	<rectangle fill="solid" height="0.1" line-thickness="1" position-x="3.0" position-y="3.2" width="0.3">
+	</rectangle>
+	<rectangle fill="none" height="0.1" line-thickness="1" position-x="3.3" position-y="3.2" width="0.3">
+	</rectangle>
+	<rectangle fill="none" height="0.1" line-thickness="1" position-x="3.0" position-y="3.3" width="0.3">
+	</rectangle>
+	<rectangle fill="solid" height="0.1" line-thickness="1" position-x="3.3" position-y="3.3" width="0.3">
+	</rectangle>
+	<rectangle fill="none" height="0.1" line-thickness="1" position-x="3.0" position-y="3.4" width="0.3">
+	</rectangle>
+	<rectangle fill="solid" height="0.1" line-thickness="1" position-x="3.3" position-y="3.4" width="0.3">
+	</rectangle>
+
+
+	</label>
+</labels>
+</bpl-document>

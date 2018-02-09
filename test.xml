@@ -1,0 +1,271 @@
+<?xml version = "1.0" ?>
+<bpl-document xmlns = "http://www.bradycorp.com/printers/bpl" >
+<defaults>
+	<document units = "inches" />
+</defaults>
+<labels>
+
+	<label 
+		width  = "2.0" 
+		height = "3.0">
+
+	<graphic position-x="0" position-y="0" height="1" width="3.54" file-name="tecspeclogo.jpg">
+	</graphic>
+	<text position-x="0" position-y="1" align="right" font-name="Arial" BOLD="true" >
+		<text-sizing>
+			<manual height=".25" width="1.4" font-size="12"/>
+		</text-sizing>
+		<datasource>
+			<static-text value="TAG:" />
+		</datasource>
+	</text>
+	<text position-x="1.45" position-y="1" align="left" font-name="Arial" BOLD="true" >
+		<text-sizing>
+			<manual height=".25" width="2" font-size="30"/>
+		</text-sizing>
+		<datasource>
+			<static-text value="15-E-01A" />
+		</datasource>
+	</text>
+	<text position-x="0" position-y="1.4" align="right" font-name="Arial" BOLD="true" >
+		<text-sizing>
+			<manual height=".25" width="1.4" font-size="12"/>
+		</text-sizing>
+		<datasource>
+			<static-text value="BAY/RISERS:" />
+		</datasource>
+	</text>
+	<text position-x="1.45" position-y="1.4" align="left" font-name="Arial" BOLD="true" >
+		<text-sizing>
+			<manual height=".25" width="2" font-size="30"/>
+		</text-sizing>
+		<datasource>
+			<static-text value="1S-2R" />
+		</datasource>
+	</text>
+	<text position-x="0" position-y="1.5" align="right" font-name="Arial" BOLD="true" >
+		<text-sizing>
+			<manual height=".25" width="1.4" font-size="12"/>
+		</text-sizing>
+		<datasource>
+			<static-text value="RETURN PIPE:" />
+		</datasource>
+	</text>
+	<text position-x="1.45" position-y="1.8" align="left" font-name="Arial" BOLD="true" >
+		<text-sizing>
+			<manual height=".25" width="2" font-size="30"/>
+		</text-sizing>
+		<datasource>
+			<static-text value="1" />
+		</datasource>
+	</text>
+	<text position-x="0" position-y="1.9" align="right" font-name="Arial" BOLD="true" >
+		<text-sizing>
+			<manual height=".25" width="1.4" font-size="12"/>
+		</text-sizing>
+		<datasource>
+			<static-text value="SUPPLY PIPE:" />
+		</datasource>
+	</text>
+	<text position-x="1.45" position-y="2.2" align="left" font-name="Arial" BOLD="true" >
+		<text-sizing>
+			<manual height=".25" width="2" font-size="30"/>
+		</text-sizing>
+		<datasource>
+			<static-text value="5" />
+		</datasource>
+	</text>
+	<text position-x="0" position-y="2.6" align="right" font-name="Arial" BOLD="true" >
+		<text-sizing>
+			<manual height=".25" width="1.4" font-size="12"/>
+		</text-sizing>
+		<datasource>
+			<static-text value="AIR:" />
+		</datasource>
+	</text>
+	<text position-x="1.45" position-y="2.6" align="left" font-name="Arial" BOLD="true" >
+		<text-sizing>
+			<manual height=".25" width="2" font-size="30"/>
+		</text-sizing>
+		<datasource>
+			<static-text value="LEFT" />
+		</datasource>
+	</text>
+	<text position-x="0" position-y="3.0" align="right" font-name="Arial" BOLD="true" >
+		<text-sizing>
+			<manual height=".25" width="1.4" font-size="12"/>
+		</text-sizing>
+		<datasource>
+			<static-text value="PASSTHROUGH:" />
+		</datasource>
+	</text>
+	<text position-x="1.45" position-y="3.0" align="left" font-name="Arial" BOLD="true" >
+		<text-sizing>
+			<manual height=".25" width="2" font-size="30"/>
+		</text-sizing>
+		<datasource>
+			<static-text value="YES" />
+		</datasource>
+	</text>
+	<text position-x="0" position-y="3.4" align="right" font-name="Arial" BOLD="true" >
+		<text-sizing>
+			<manual height=".25" width="1.4" font-size="12"/>
+		</text-sizing>
+		<datasource>
+			<static-text value="ADDRESS:" />
+		</datasource>
+	</text>
+	<text position-x="1.45" position-y="3.4" align="left" font-name="Arial" BOLD="true" >
+		<text-sizing>
+			<manual height=".25" width="2" font-size="30"/>
+		</text-sizing>
+		<datasource>
+			<static-text value="8" />
+		</datasource>
+	</text>
+	<barcode
+		position-x = "1.8"
+		position-y = "3.6"
+		height = ".3"
+		type = "code 128 a"
+		human-readable = "false"
+		density = "90"
+		ratio = "3:1"
+		human-readable-location = "bottom" >
+	<datasource>
+		<static-text value = "1518057962" />
+	</datasource>
+	</barcode>
+	<rectangle
+		position-x = "3.0" 
+		position-y = "2.7" 
+		height = "0.1"
+		width = "0.3"
+		line-thickness="1"
+		fill="solid">
+	</rectangle>
+	<rectangle
+		position-x = "3.3" 
+		position-y = "2.7" 
+		height = "0.1"
+		width = "0.3"
+		line-thickness="1"
+		fill="none">
+	</rectangle>
+	<rectangle
+		position-x = "3.0" 
+		position-y = "2.8" 
+		height = "0.1"
+		width = "0.3"
+		line-thickness="1"
+		fill="none">
+	</rectangle>
+	<rectangle
+		position-x = "3.3" 
+		position-y = "2.8" 
+		height = "0.1"
+		width = "0.3"
+		line-thickness="1"
+		fill="solid">
+	</rectangle>
+	<rectangle
+		position-x = "3.0" 
+		position-y = "2.9" 
+		height = "0.1"
+		width = "0.3"
+		line-thickness="1"
+		fill="solid">
+	</rectangle>
+	<rectangle
+		position-x = "3.3" 
+		position-y = "2.9" 
+		height = "0.1"
+		width = "0.3"
+		line-thickness="1"
+		fill="none">
+	</rectangle>	
+	<rectangle
+		position-x = "3.0" 
+		position-y = "3.0" 
+		height = "0.1"
+		width = "0.3"
+		line-thickness="1"
+		fill="none">
+	</rectangle>
+	<rectangle
+		position-x = "3.3" 
+		position-y = "3.0" 
+		height = "0.1"
+		width = "0.3"
+		line-thickness="1"
+		fill="solid">
+	</rectangle>
+	<rectangle
+		position-x = "3.0" 
+		position-y = "3.1" 
+		height = "0.1"
+		width = "0.3"
+		line-thickness="1"
+		fill="none">
+	</rectangle>
+	<rectangle
+		position-x = "3.3" 
+		position-y = "3.1" 
+		height = "0.1"
+		width = "0.3"
+		line-thickness="1"
+		fill="solid">
+	</rectangle>
+	<rectangle
+		position-x = "3.0" 
+		position-y = "3.2" 
+		height = "0.1"
+		width = "0.3"
+		line-thickness="1"
+		fill="solid">
+	</rectangle>
+	<rectangle
+		position-x = "3.3" 
+		position-y = "3.2" 
+		height = "0.1"
+		width = "0.3"
+		line-thickness="1"
+		fill="none">
+	</rectangle>
+	<rectangle
+		position-x = "3.0" 
+		position-y = "3.3" 
+		height = "0.1"
+		width = "0.3"
+		line-thickness="1"
+		fill="none">
+	</rectangle>
+	<rectangle
+		position-x = "3.3" 
+		position-y = "3.3" 
+		height = "0.1"
+		width = "0.3"
+		line-thickness="1"
+		fill="solid">
+	</rectangle>
+	<rectangle
+		position-x = "3.0" 
+		position-y = "3.4" 
+		height = "0.1"
+		width = "0.3"
+		line-thickness="1"
+		fill="none">
+	</rectangle>
+	<rectangle
+		position-x = "3.3" 
+		position-y = "3.4" 
+		height = "0.1"
+		width = "0.3"
+		line-thickness="1"
+		fill="solid">
+	</rectangle>
+
+
+	</label>
+</labels>
+</bpl-document>

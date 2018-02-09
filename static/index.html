@@ -18,7 +18,7 @@
 		<div>
 			<label>Enter Unit Tag: 
 				<input ng-model="vm.model.inputTag" ng-change="vm.setUnitData()" />
-				<button ng-show="vm.model.unitData">Send</button>
+				<button ng-click="vm.saveOrder()" ng-disabled="!vm.model.unitData">Submit</button>
 			</label>
 		</div>
 		<div class="image-wrapper" ng-show="vm.model.unitData">
