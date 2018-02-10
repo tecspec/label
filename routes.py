@@ -15,6 +15,7 @@ def create_xml_file(data):
     serial_number_string = str(data['serial_number'])
     return_piping_string = str(data['return_piping_type'])
     supply_piping_string = str(data['supply_piping_type'])
+    passthrough_string = get_pass_value(data)
     air_value = get_air_value(data)
     address_value = get_address_value(data)
     tree = ET.parse('test.xml')
@@ -28,12 +29,46 @@ def create_xml_file(data):
     passthrough = labels[12][1][0]
     address = labels[14][1][0]
     serial_number = labels[15][0][0]
+    binaryaddr = '{0:08b}'.format(int(address_value))
+    if binaryaddr[7] == '0':
+       labels[16].set('fill', "solid")
+       #print(labels[16].nodeValue)
+    else:
+       labels[17].set('fill', "solid")
+    if binaryaddr[6] == '0':
+       labels[18].set('fill', "solid")
+    else:
+       labels[19].set('fill', "solid")
+    if binaryaddr[5] == '0':
+       labels[20].set('fill', "solid")
+    else:
+       labels[21].set('fill', "solid")
+    if binaryaddr[4] == '0':
+       labels[22].set('fill', "solid")
+    else:
+       labels[23].set('fill', "solid")
+    if binaryaddr[3] == '0':
+       labels[24].set('fill', "solid")
+    else:
+       labels[25].set('fill', "solid")
+    if binaryaddr[2] == '0':
+       labels[26].set('fill', "solid")
+    else:
+       labels[27].set('fill', "solid")
+    if binaryaddr[1] == '0':
+       labels[28].set('fill', "solid")
+    else:
+       labels[29].set('fill', "solid")
+    if binaryaddr[0] == '0':
+       labels[30].set('fill', "solid")
+    else:
+       labels[31].set('fill', "solid")
     unit_tag.set('value', data['unit_tag'])
     bay_risers.set('value', data['bay'])
     return_pipe.set('value', return_piping_string)
     supply_pipe.set('value', supply_piping_string)
     air.set('value', air_value)
-    passthrough.set('value', data["pass_through?"])
+    passthrough.set('value', passthrough_string)
     address.set('value', address_value)
     serial_number.set('value', serial_number_string)
     filename = './xml_files/output-{}.xml'.format(serial_number_string)
@@ -48,6 +83,12 @@ def get_air_value(data):
         return "LEFT"
     else:
         return "RIGHT"
+
+def get_pass_value(data):
+    if data["pass_through?"] == "P":
+        return "YES"
+    else:
+        return "NO"
 
 
 def getConfigFromFile(file):
@@ -116,5 +157,6 @@ def save_unit_tag_list():
     set_unit_tag_timestamp(serial_number, unit_tag)
     filename = create_xml_file(data)
     shell_command_to_print = "cat {} | nc 192.168.2.156 9100".format(filename)
+    call([shell_command_to_print], shell=True)
     call([shell_command_to_print], shell=True)
     return "THIS WORKED"
